@@ -14,7 +14,6 @@ const app = express();
 app.use(cors());
 
 app.get("/word", (req: Request, res: Response) => {
-  // res.send(String(generateWordSet().wordToGuessIndex));
   res.send(String(generateWordSet().wordToGuess));
 });
 
@@ -51,10 +50,6 @@ app.get(
     );
   }
 );
-
-// app.get("/", (req: Request, res: Response) => {
-//   res.send("??");
-// });
 
 const port = 3333;
 app.listen(port, () => {

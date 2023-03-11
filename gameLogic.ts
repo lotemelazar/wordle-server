@@ -1,14 +1,5 @@
 import wordBank from "./Data/words";
 
-export const boardDefault = [
-  ["", "", "", "", ""],
-  ["", "", "", "", ""],
-  ["", "", "", "", ""],
-  ["", "", "", "", ""],
-  ["", "", "", "", ""],
-  ["", "", "", "", ""],
-];
-
 export const generateWordSet = () => {
   let wordSet;
   let wordToGuess;
